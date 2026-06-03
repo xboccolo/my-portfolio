@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edoardo Boccolo - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          edoardo boccolo
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          edoboccolo@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +39 351 94 87 113
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">about me</a>
+          <a class="topmenu" href="#skills">skills</a>
+          <a class="topmenu" href="#projects">projects</a>
+          <a class="topmenu" href="#recommendation">recommendation</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="/Users/edoardoboccolo/Desktop/IBM COURSE/ESERCIZI/FINAL HTML CSS JAVASCRIPT PROJECT/finalproject_startercode/html_finalprojimages/profile_picture.jpeg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            hi, i'm edoardo
+          </h1>
+          <p>
+            I am a Full Stack Developer, currently refreshing my knowledge through the IBM Full Stack Developer Professional Certificate. 
+            I have a BSc in Mathematics and Media and a Master of Arts in Cinema.
+            I've been working as a creative for the TV and I'm now looking to make a career change towards a more technical role.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://img.icons8.com/doodle/48/adobe-logo.png" alt="adobe-logo"/>
+          <h6>Adobe Suite</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://img.icons8.com/ios/50/c-key.png" alt="c-key"/>
+          <h6>C</h6>
+          <p>2 years experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>spig0li.net</h3>
+            <ul>
+              <li>I built a fully interactive webpage called spig0li.net which worked for a few years as an online magazine focusing on arts and queer culture.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>image editor</h3>
+            <ul>
+              <li>as part of my uni Java course I developed a small software capable of editing pictures both with manual sliders and with various pre-defined filters. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>visual designer</h3>
+            <ul>
+              <li>in my work experience at RAI, I worked closely with the graphics team in order to build the visual architecture of many TV programmes airing on RaiNews24 from 2021 to 2026.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Edoardo's work on spig0li.net was exceptional. He delivered a highly interactive, 
+          seamless platform that perfectly captured our arts and queer culture focus. 
+          A talented and culturally aware developer.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Edoardo's desktop application handled pixel manipulation effortlessly, balancing precise 
+          user controls with complex algorithmic rendering tools in a remarkably clean, 
+          intuitive user interface.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Edoardo's contributions to our national broadcast network were invaluable. He bridged 
+          technical design with media production, shaping the on-screen aesthetic for flagship 
+          daily journalism and elevated our overall presentation.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">leave a recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="66px">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>thank you for adding a new recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
